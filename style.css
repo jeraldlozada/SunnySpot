@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Quando', serif;
+    color: #173e43;
+}
+
+header{
+    width: 94.5%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: 79px auto;
+    grid-template-areas: 
+                "a b"
+                "d d";
+}
+
+.wrapper {
+    width: 94.5%;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+
+.normallogo, #banner {
+    display: none;
+}
+
+.mobilenav {
+    grid-area: d;
+}
+
+.mobilenav ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #173e43;
+    border-bottom: 3px solid #173e43;
+    font-size: 16px;
+    font-family: 'Quando', serif;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+nav a:hover {
+    color: #3fb0ac;
+    border-bottom: 3px solid #3fb0ac;
+}
+
+
+nav div {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+#welcometext{
+    background-color: #dddfd4;
+}
+
+#weltextcontainer {
+    width: 94.5%;
+    margin: auto;
+}
+
+#welcometext p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#content h2{
+    font-size: 18px;
+}
+
+#welcometext h2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.info {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info h2 {
+    padding-bottom: 10px;
+}
+
+.info p{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer {
+    background-color: #173e43;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h1{
+    color: white;
+    padding-bottom: 30px;
+}
+
+footer p{
+    font-size: 10px;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 56px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer li{
+    display: inline-block;
+}
+
+/* ------------- For 960px and above --------------- */
+
+@media only screen and (min-width: 960px) {
+
+    .wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1, h2 {
+        font-family: 'Quando', serif;
+        color: #173e43;
+    }
+
+    #banner, .normallogo {
+        display: block;
+    }
+    
+    .mobilelogo {
+        display: none;
+    }
+    
+    header {
+        width: 85%;
+        margin: auto;
+        padding-bottom: 25px;
+        display: grid;
+        grid-template-columns: 119px auto;
+        grid-template-areas: 
+                "a b"
+                "a d";
+    }
+    
+    header a {
+        grid-area: a;
+    }
+    
+    header h1 {
+        padding-left: 15px;
+        align-self: flex-end;
+        font-size: 34px;
+    }
+    
+    .mobilenav {
+        text-align: end;
+        align-self: flex-end;
+    }
+    
+    nav a{
+        all: unset;
+        text-decoration: none;
+        color: #173e43;
+        font-size: 16.49px;
+        font-family: 'Quando', serif;
+        margin-right: 10px;
+    }
+    
+    nav a:hover {
+        color: #3fb0ac;
+        border-bottom: 3px solid #3fb0ac;
+    }
+    
+    nav li {
+        display: inline-block;
+    }
+    
+    #banner {
+        padding-bottom: 25px;
+    }
+    
+    
+    #welcometext{
+        background-color: #dddfd4;
+    }
+    
+    #welcometext p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        padding-top: 0;
+    }
+    
+    #infocontents h2{
+        font-size: 18px;
+    }
+    
+    #welcometext h2 {
+        font-size: 18px;
+        padding-top: 0px;
+    }
+    
+    .info {
+        text-align: center;
+    }
+    
+    .info h2 {
+        padding-bottom: 10px;
+    }
+    
+    .info p{
+        text-align: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    footer {
+        background-color: #173e43;
+        color: white;
+        text-align: center;
+    }
+    
+    .footy {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+    }
+    
+    footer h1{
+        color: white;
+        padding: 0;
+    }
+    
+    footer p{
+        font-size: 10px;
+    }
+    
+    footer ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 15px;
+        font-size: 65px;
+        padding: 0;
+        padding-top: 24px;
+    }
+    
+    .socicons {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 10px;
+    }
+    
+    .foottext {
+        padding-top: 24px;
+    }
+    
+    .foottext p {
+        padding-top: 125px;
+        padding-bottom: 16px;
+    }
+    
+    footer li > a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    footer li{
+        display: inline-block;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    #weltextcontainer {
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 23px;
+    }
+    
+    .responsiveimage {
+        width: 100%;
+        max-width: 960px;
+        height: auto;
+      }
+    
+    #responsivelogo {
+        width: 100%;
+        max-width: 119px;
+        height: auto;
+    }
+    
+    #banner {
+        text-align: center;
+    }
+
+    .socicons {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .currentpage {
+        border-bottom: 3px solid #fae596;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    header {
+        width: 70%;
+    }
+
+    .wrapper {
+        width: 70%;
+    }
+
+    #weltextcontainer {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    header {
+        width: 60%;
+    }
+
+    .wrapper {
+        width: 70%;
+    }
+
+    #weltextcontainer {
+        width: 70%;
+    }
+}
