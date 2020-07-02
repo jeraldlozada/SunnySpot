@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/d70c53e176.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>SunnySpot Holidays</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <img src="images/SunnyspotLogo.png" class="normallogo" id="responsivelogo" width="119" height="115" alt="SunnySpot Logo">
+        <img src="images/SunnyspotLogoSmall.png" class="mobilelogo" width="79" height="75" alt="SunnySpot Small Logo">
+        </a>
+        <h1>SUNNYSPOT HOLIDAYS</h1>
+            <div class="mobilenav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="accomodation.php">Accommodation</a></li>
+                            <li><a href="camping.html">Camping</a></li>
+                            <li><a href="activities.html">Activities</a></li>
+                            <li><a href="climate.html">Climate</a></li>
+                            <li><a href="location.html">Location</a></li>
+                            <li><a class="currentpage" href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+            </div>
+    </header>
+    
+    <!-- CONTACT US FORM -->
+
+    <div class="formwrapper">
+
+        <h1>Contact Us</h1>
+
+        <div id="error-area" class="error"></div>
+
+        <!-- NOTES: action = where data is sent; method = how the data is sent -->
+        <form id="contact-form" action="" method="post">
+            <fieldset>
+                <legend>Name</legend>
+
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" required autofocus>
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact</legend>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+
+                <div>
+                    <label for="mobile">Mobile:</label>
+                    <input type="text" name="mobile" id="mobile">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Other</legend>
+
+                <p>Please choose your age:</p>
+                
+                <div>
+                    <ul class="checkboxes">
+                    <li>
+                        <input type="radio" name="age" id="age1" value="under-18">
+                        <label for="age1">Under 18</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="age" id="age2" value="19-25">
+                        <label for="age2">19-25</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="age" id="age3" value="26-35">
+                        <label for="age3">26-35</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="age" id="age4" value="36-over">
+                        <label for="age4">36 or more</label>
+                    </li>
+                </ul>
+                </div>
+                
+
+                <p>Please choose your gender:</p>
+                
+                <div>
+                    <ul class="checkboxes">
+                    <li>
+                        <input type="radio" name="gender" id="gender1" value="female">
+                        <label for="gender1">Female</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gender" id="gender2" value="male">
+                        <label for="gender2">Male</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gender" id="gender3" value="other">
+                        <label for="gender3">Other</label>
+                    </li>
+                </ul>
+                </div>
+                
+
+                <div class="emlist">
+                    <label>
+                    <input type="checkbox" name="subscribe1"> Would you like to join our mailing list?
+                    </label>
+                </div>
+                
+                <div class="emlist">
+                    <label>
+                    <input type="checkbox" name="subscribe2"> Would you like to receive specials and other promotions?
+                    </label>
+                </div>
+
+                <div>
+                    <label for="comment">Comment</label>
+                    <br>
+                    <textarea name="comment" id="comment" cols="60" rows="4" placeholder="Enter your comments here"></textarea>
+                </div>
+                
+
+            </fieldset>
+            
+            <div>
+                <button type="submit">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="wrapper footy">
+            <div class="socicons">
+                <ul>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+            <div class="foottext">
+                <h1>JERALD LOZADA</h1>
+                <p>COPYRIGHT 2020, RELAX. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+
+    
+</body>
+</html>
