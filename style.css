@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Quando', serif;
     color: #173e43;
 }
@@ -147,6 +147,203 @@ footer li{
     display: inline-block;
 }
 
+/*  */
+#cabinshowcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#cabinwrapper {
+    max-width: 1000px;
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#cabinshowcase h2 {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+#cabinshowcase p {
+    color: black;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.cabincard {
+    background-color: #dddfd4;
+    color: white;
+    min-width: 400px;
+    width: 30%;
+    margin: 25px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.pimage {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#pagetexts{
+    background-color: #dddfd4;
+}
+
+#pagecontainer {
+    width: 94.5%;
+    margin: auto;
+}
+
+#pagecontainer li {
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-left: 25px;
+    padding-top: 3px;
+}
+
+#pagetexts p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#pagetexts h3 {
+    padding-bottom: 10px;
+}
+
+#pageimages {
+    max-width: 1000px;
+    display: flex;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#pageimages img {
+    object-fit: contain;
+        width:auto;
+        max-width:100%;
+        height:auto;
+}
+
+/* -------------- Contact Form -------------- */
+
+.formwrapper {
+    max-width: 700px;
+    margin: 1em auto 2em auto;
+    padding: 1em 2em 1em 2em;
+    background-color: white;
+    color: #131b23;
+    
+}
+
+.formwrapper h1 {
+    margin-bottom: 10px;
+}
+
+.formwrapper p, .formwrapper label, .formwrapper legend {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.formwrapper label {
+    margin: 5px;
+}
+
+.formwrapper p {
+    margin: 5px;
+}
+
+.formwrapper li {
+    margin: 5px;
+}
+
+.formwrapper legend {
+    font-size: 18px;
+    display: block;
+    margin-left: 10px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+
+fieldset {
+    margin-bottom: 1em;
+    border: 1px solid #173e43;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+fieldset > div {
+    margin: 10px 10px 10px 5px;
+}
+
+label:first-child {
+    display: inline-block;
+    width: 8em;
+}
+
+input, textarea, select, button {
+    font-size: 1em;
+    padding: .2em;
+}
+
+button[type=submit] {
+    display: inline-block;
+    padding: 0.9em 1.4em;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.checkboxes {
+    padding-left: 0.5em;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #c33;
+    font-style: italic;
+    padding-bottom: 2em;
+}
+
+.emlist label {
+    display: unset;
+    padding-left: .25em;
+}
+
+textarea {
+    margin-left: .5em;
+    margin-top: .8em;
+    padding: .3em;
+}
+
+input:focus {
+    outline: none !important;
+    border:2px solid green;
+}
+
+textarea:focus {
+    outline: none !important;
+    border:2px solid green;
+}
+
+/*  */
 /* ------------- For 960px and above --------------- */
 
 @media only screen and (min-width: 960px) {
@@ -196,12 +393,14 @@ footer li{
     }
     
     nav a{
-        all: unset;
+        border: none;
         text-decoration: none;
         color: #173e43;
         font-size: 16.49px;
         font-family: 'Quando', serif;
         margin-right: 10px;
+        padding-left: 0;
+        margin-left: 10px;
     }
     
     nav a:hover {
@@ -324,6 +523,13 @@ footer li{
         grid-template-columns: auto auto;
         column-gap: 23px;
     }
+
+    #pagecontainer {
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     
     .responsiveimage {
         width: 100%;
@@ -350,6 +556,7 @@ footer li{
         border-bottom: 3px solid #fae596;
     }
 
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -364,6 +571,11 @@ footer li{
     #weltextcontainer {
         width: 70%;
     }
+
+    #pagecontainer {
+        width: 70%;
+        margin: auto;
+    }
 }
 
 @media only screen and (min-width: 1700px) {
@@ -372,10 +584,15 @@ footer li{
     }
 
     .wrapper {
-        width: 70%;
+        width: 60%;
     }
 
     #weltextcontainer {
-        width: 70%;
+        width: 60%;
+    }
+
+    #pagecontainer {
+        width: 60%;
+        margin: auto;
     }
 }
