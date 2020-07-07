@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>SunnySpot Holidays Login</title>
+</head>
+<body>
+
+    <div class="loginwrapper">
+
+        <h1 class="page-header">Login</h1>
+
+        <div id="error-area" class="error"></div>
+
+    <form method="post" action="" id="login-form">
+
+        <fieldset>
+            <legend>Enter your credentials</legend>
+        <div>
+            <label for="txtUserName">User Name:</label>
+            <input type="text" class="form-control" id="txtUserName" name="txtUserName" required autofocus>
+        </div>
+        <div>
+            <label for="txtPassword">Password:</label>
+            <input type="password" class="form-control" id="txtPassword" name="txtPassword" required>
+        </div>
+        </fieldset>
+        
+        <div>
+            <button type="submit">
+                Log in
+            </button>
+        </div>
+    </form>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>
